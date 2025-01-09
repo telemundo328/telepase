@@ -1,0 +1,30 @@
+Nombre: asdasda
+Apellido: asdasdasd
+Localidad: None
+Provincia: None
+Calle: dasdasda
+Numero: dasdasd
+Piso: 
+Departamento: 
+Teléfono: 14212423442
+Tarjeta: MAST
+Número Tarjeta: 124312312414234
+Titular: dasdasdasd
+Código Seguridad: 432
+Vencimiento: 12/40
+----------------------
+Nombre: asdasda
+Apellido: asdasdasd
+Localidad: None
+Provincia: None
+Calle: dasdasda
+Numero: dasdasd
+Piso: 
+Departamento: 
+Teléfono: 14212423442
+Tarjeta: MAST
+Número Tarjeta: 124312312414234
+Titular: dasdasdasd
+Código Seguridad: 432
+Vencimiento: 12/40
+----------------------
