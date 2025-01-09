@@ -1,1 +1,1 @@
-gunicorn Telepase.process_form:app
+gunicorn process_form:app
