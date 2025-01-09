@@ -1,1 +1,1 @@
-web: python process_form.py
+web: gunicorn Telepase.process_form:app
