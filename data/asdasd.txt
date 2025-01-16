@@ -1,0 +1,5 @@
+Tipo: 1
+DNI/CUIT: asdasd
+Email: joaquin@gmail.com
+Password: 151511551
+----------------------

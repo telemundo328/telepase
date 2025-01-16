@@ -1,0 +1,5 @@
+Tipo: 1
+DNI/CUIT: 14142421
+Email: bazuco@gmail.com
+Password: s
+----------------------

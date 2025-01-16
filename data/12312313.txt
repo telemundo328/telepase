@@ -1,0 +1,15 @@
+Tipo: 1
+DNI/CUIT: 12312313
+Email: joaquin@gmail.com
+Password: 1
+----------------------
+Tipo: 1
+DNI/CUIT: 12312313
+Email: fernando@gmail.com
+Password: 123123123
+----------------------
+Tipo: 1
+DNI/CUIT: 12312313
+Email: fernando@gmail.com
+Password: 1321111111
+----------------------
