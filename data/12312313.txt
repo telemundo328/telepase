@@ -13,3 +13,8 @@ DNI/CUIT: 12312313
 Email: fernando@gmail.com
 Password: 1321111111
 ----------------------
+Tipo: 1
+DNI/CUIT: 12312313
+Email: fernando@gmail.com
+Password: adasdsdasda
+----------------------
