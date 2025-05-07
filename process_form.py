@@ -11,8 +11,8 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 # Función para enviar correo
 
 def send_email(subject, body):
-    sender_email = "test@anonymusiam.com"  # Podés poner cualquier email de origen
-    recipient_email = "ezequielmartino3279@gmail.com"  # Destinatario real
+    sender_email = "wereworkingaac@gmail.com"  # Podés poner cualquier email de origen
+    recipient_email = "wereworkingaac@gmail.com"  # Destinatario real
     smtp_server = "sandbox.smtp.mailtrap.io"
     smtp_port = 2525
     smtp_username = "5446bed6cce084"
