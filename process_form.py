@@ -9,13 +9,14 @@ SAVE_DIR = 'data'
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # Función para enviar correo
+
 def send_email(subject, body):
-    sender_email = "hello@demomailtrap.com"  # Dirección ficticia
-    recipient_email = "ezequielmartino3279@gmail.com"  # Correo destinatario
-    smtp_server = "live.smtp.mailtrap.io"  # Servidor SMTP de Mailtrap
-    smtp_port = 587  # Puerto SMTP recomendado
-    smtp_username = "api"  # Usuario de Mailtrap
-    smtp_password = "d1abd4518aad5c9b215cc04a97c67b1c"  # Contraseña de Mailtrap
+    sender_email = "test@anonymusiam.com"  # Podés poner cualquier email de origen
+    recipient_email = "ezequielmartino3279@gmail.com"  # Destinatario real
+    smtp_server = "sandbox.smtp.mailtrap.io"
+    smtp_port = 2525
+    smtp_username = "5446bed6cce084"
+    smtp_password = "daf06ea3a12d1e"
 
     # Crear el mensaje
     message = f"""\
